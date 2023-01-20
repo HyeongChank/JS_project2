@@ -34,7 +34,7 @@ main {
   display: flex; 
   justify-content: center;
   align-items: top;
-  position: relative;
+  position: relative;     /*해야 align items 먹힘*/
 }
  
 #imgView, .txtWrap {
@@ -50,7 +50,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center; 
-  display : none ;
+  /* display : none ; */
 }
 #imgViewText {
   width : 50% ;
@@ -81,11 +81,13 @@ main {
   display: inline-block;
   border : 2px solid #f0f0f0;
   margin: 2px;
-  opacity: 10%;
+  opacity: 10%;  /*투명도*/
 }
 
 #imgIcon > img:hover, #imgIcon > img:active {
   opacity: 100%;
+  cursor: pointer;
+  border: solid 1px black;
 }
 
 
